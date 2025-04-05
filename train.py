@@ -92,7 +92,7 @@ with mlflow.start_run(run_name="final_model_log"):
     mlflow.pyfunc.log_model(
         artifact_path="model",
         python_model=LogisticRegressionWrapper(model),
-        registered_model_name="car_price_classifier"
+        registered_model_name="st124879-a3-model"
     )
 
 print("✅ Training complete and model logged to MLflow.")
